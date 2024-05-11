@@ -1,0 +1,1836 @@
+{
+  "_id": "7792f8812925d0de88d498eefcd265f203a5a0b5c0ea1aa129f8b915496a3456",
+  "version": "v11.03.7",
+  "date": "2024-04-21T18:37:00.000Z",
+  "queueType": "Custom",
+  "endingWave": 15,
+  "gameLength": 1344,
+  "gameElo": 2847,
+  "playerCount": 4,
+  "humanCount": 4,
+  "spellChoices": [
+      "pawn_shop_powerup_id",
+      "giant_snail_powerup_id",
+      "investment_powerup_id"
+  ],
+  "leftKingPercentHp": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.575,
+      0.575,
+      0.535,
+      0.55,
+      0.57,
+      0.585,
+      0.605,
+      0
+  ],
+  "rightKingPercentHp": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.99,
+      0.78,
+      0.78,
+      0.7811558
+  ],
+  "kingSpell": "lightning_hammer_activator_ability_id",
+  "incomenchill": false,
+  "votedmode": null,
+  "availablemode": null,
+  "playersData": [
+      {
+          "playerId": "B82A39DDEAFB347C",
+          "playerName": "Widderson",
+          "playerSlot": 1,
+          "legion": "Greed",
+          "workers": 18.96,
+          "value": 3500,
+          "cross": false,
+          "gameResult": "lost",
+          "classicElo": 2731,
+          "overallElo": 2810,
+          "eloChange": 0,
+          "fighters": "Pollywog,Pollywog,Pollywog,Cursed Casket,Desert Pilgrim,Iron Maiden,Iron Maiden,Desert Pilgrim,Desert Pilgrim,Ocean Templar,Holy Avenger,Desert Pilgrim,King Claw,Doppelganger,Devilfish,Pollywog,Desert Pilgrim,Spectral Scallywag",
+          "eco": false,
+          "mercenaries": "Lizard,Lizard,Safety Mole,Brute,Snail,Fiend,Safety Mole,Brute,Brute,Dino,Dino,Safety Mole,Brute,Witch,Dragon Turtle,Snail",
+          "stayedUntilEnd": true,
+          "chosenSpell": "Pawn Shop",
+          "chosenSpellLocation": "-1|-1",
+          "partySize": 1,
+          "firstWaveFighters": "Pirate Skeleton,Pirate Skeleton",
+          "rolls": "pollywog_unit_id, pirate_skeleton_unit_id, cursed_casket_unit_id, desert_pilgrim_unit_id, grarl_unit_id, nightmare_unit_id",
+          "legionSpecificElo": 2553,
+          "partyMembers": [
+              "Widderson"
+          ],
+          "partyMembersIds": [
+              "B82A39DDEAFB347C"
+          ],
+          "mvpScore": 4117,
+          "netWorthPerWave": [
+              433,
+              542,
+              665,
+              796,
+              957,
+              1151,
+              1375,
+              1592,
+              1903,
+              2280,
+              2776,
+              3316,
+              3908,
+              4455,
+              4617
+          ],
+          "valuePerWave": [
+              160,
+              160,
+              270,
+              270,
+              420,
+              450,
+              635,
+              875,
+              970,
+              1185,
+              1645,
+              2060,
+              2330,
+              2995,
+              3500
+          ],
+          "workersPerWave": [
+              5,
+              5,
+              7,
+              7,
+              10,
+              10,
+              10,
+              11,
+              14,
+              14,
+              14,
+              18.96,
+              18.96,
+              18.96,
+              18.96
+          ],
+          "incomePerWave": [
+              11,
+              23,
+              35,
+              35,
+              35,
+              80,
+              104,
+              104,
+              149,
+              188,
+              230,
+              272,
+              287,
+              355,
+              385
+          ],
+          "mercenariesSentPerWave": [
+              [],
+              [],
+              [
+                  "Lizard"
+              ],
+              [
+                  "Lizard"
+              ],
+              [],
+              [],
+              [
+                  "Safety Mole",
+                  "Brute",
+                  "Snail"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [
+                  "Safety Mole",
+                  "Brute",
+                  "Brute"
+              ],
+              [
+                  "Dino"
+              ],
+              [
+                  "Dino"
+              ],
+              [
+                  "Safety Mole",
+                  "Brute"
+              ],
+              [],
+              [
+                  "Witch",
+                  "Dragon Turtle",
+                  "Snail"
+              ]
+          ],
+          "mercenariesReceivedPerWave": [
+              [],
+              [],
+              [
+                  "Snail"
+              ],
+              [],
+              [
+                  "Fiend"
+              ],
+              [],
+              [],
+              [
+                  "Pack Leader",
+                  "Robo"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [],
+              [
+                  "Pack Leader",
+                  "Safety Mole",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail"
+              ],
+              [],
+              [],
+              [
+                  "Needler",
+                  "Pack Leader",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail"
+              ]
+          ],
+          "leaksPerWave": [
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Robo"
+              ],
+              [],
+              [
+                  "Granddaddy"
+              ],
+              [],
+              [
+                  "Mantis",
+                  "Mantis",
+                  "Mantis",
+                  "Mantis",
+                  "Giant Snail",
+                  "Pack Leader"
+              ],
+              [],
+              [],
+              [
+                  "Giant Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Needler"
+              ]
+          ],
+          "buildPerWave": [
+              [
+                  "pirate_skeleton_unit_id:2.5|4.5:0",
+                  "pirate_skeleton_unit_id:8.5|5:0"
+              ],
+              [
+                  "pirate_skeleton_unit_id:2.5|4.5:0",
+                  "pirate_skeleton_unit_id:8.5|5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "pollywog_unit_id:8.5|8:0",
+                  "pollywog_unit_id:8.5|5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "pollywog_unit_id:8.5|8:0",
+                  "pollywog_unit_id:8.5|5:0",
+                  "nightmare_unit_id:0.5|3.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "pollywog_unit_id:8.5|8:0",
+                  "pollywog_unit_id:8.5|5:0",
+                  "nightmare_unit_id:0.5|3.5:0",
+                  "grarl_unit_id:1.5|5:0",
+                  "seraphin_unit_id:0.5|5.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "pollywog_unit_id:8.5|8:0",
+                  "pollywog_unit_id:8.5|5:0",
+                  "nightmare_unit_id:0.5|3.5:0",
+                  "grarl_unit_id:1.5|5:0",
+                  "seraphin_unit_id:0.5|5.5:0",
+                  "devilfish_unit_id:8.5|7:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "devilfish_unit_id:8.5|8:0",
+                  "pollywog_unit_id:8.5|5:0",
+                  "nightmare_unit_id:0.5|3.5:0",
+                  "grarl_unit_id:1.5|5:0",
+                  "devilfish_unit_id:0.5|5.5:0",
+                  "devilfish_unit_id:8.5|7:0",
+                  "desert_pilgrim_unit_id:1.5|6:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "devilfish_unit_id:8.5|8:0",
+                  "pollywog_unit_id:8.5|5:0",
+                  "nightmare_unit_id:0.5|3.5:0",
+                  "king_claw_unit_id:1.5|5:0",
+                  "seraphin_unit_id:0.5|5.5:0",
+                  "seraphin_unit_id:8.5|7:0",
+                  "desert_pilgrim_unit_id:1.5|6:0",
+                  "nightmare_unit_id:1.5|3:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "devilfish_unit_id:8.5|8:0",
+                  "doppelganger_unit_id:0.5|3.5:0",
+                  "king_claw_unit_id:1.5|5:0",
+                  "seraphin_unit_id:8.5|7:0",
+                  "desert_pilgrim_unit_id:1.5|6:0",
+                  "nightmare_unit_id:1.5|3:0",
+                  "nightmare_unit_id:0.5|4.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "devilfish_unit_id:8.5|8:0",
+                  "doppelganger_unit_id:0.5|3.5:0",
+                  "king_claw_unit_id:1.5|5:0",
+                  "devilfish_unit_id:8.5|7:0",
+                  "desert_pilgrim_unit_id:1.5|6:0",
+                  "nightmare_unit_id:1.5|3:0",
+                  "nightmare_unit_id:0.5|4.5:0",
+                  "holy_avenger_unit_id:2.5|3.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "devilfish_unit_id:8.5|8:0",
+                  "doppelganger_unit_id:0.5|3.5:0",
+                  "king_claw_unit_id:1.5|5:0",
+                  "devilfish_unit_id:8.5|7:0",
+                  "desert_pilgrim_unit_id:1.5|6:0",
+                  "nightmare_unit_id:1.5|3:0",
+                  "nightmare_unit_id:0.5|4.5:0",
+                  "holy_avenger_unit_id:2.5|3.5:0",
+                  "ocean_templar_unit_id:1.5|4:0",
+                  "desert_pilgrim_unit_id:0.5|5.5:0",
+                  "desert_pilgrim_unit_id:0.5|6.5:0"
+              ],
+              [
+                  "spectral_scallywag_unit_id:2.5|4.5:0",
+                  "desert_pilgrim_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6:0",
+                  "devilfish_unit_id:8.5|8:0",
+                  "doppelganger_unit_id:0.5|3.5:0",
+                  "king_claw_unit_id:1.5|5:0",
+                  "desert_pilgrim_unit_id:1.5|6:0",
+                  "holy_avenger_unit_id:2.5|3.5:0",
+                  "ocean_templar_unit_id:1.5|4:0",
+                  "desert_pilgrim_unit_id:0.5|5.5:0",
+                  "desert_pilgrim_unit_id:0.5|6.5:0",
+                  "iron_maiden_unit_id:0.5|4.5:0",
+                  "iron_maiden_unit_id:1.5|3:0",
+                  "desert_pilgrim_unit_id:1.5|7:0",
+                  "cursed_casket_unit_id:2.5|8:0",
+                  "pollywog_unit_id:8.5|7:0",
+                  "pollywog_unit_id:7.5|6.5:0",
+                  "pollywog_unit_id:7.5|5.5:0"
+              ]
+          ],
+          "leakValue": 161,
+          "leaksCaughtValue": 0,
+          "leftAtSeconds": -1,
+          "kingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Regen",
+                  "Upgrade King Regen",
+                  "Upgrade King Regen"
+              ],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Regen"
+              ]
+          ],
+          "opponentKingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+          ],
+          "megamind": false,
+          "chosenChampionLocation": "-1|-1"
+      },
+      {
+          "playerId": "6849F9D14290C34A",
+          "playerName": "Kingdanzz",
+          "playerSlot": 2,
+          "legion": "Chaos",
+          "workers": 20.199999,
+          "value": 3255,
+          "cross": false,
+          "gameResult": "lost",
+          "classicElo": 2464,
+          "overallElo": 2904,
+          "eloChange": 0,
+          "fighters": "Masked Spirit,Arctaire,Dark Mage,Doomsday Machine,Pyro,Pyro,MPS,Pyro,Pyro,Pyro,Warg,Alpha Male",
+          "eco": false,
+          "mercenaries": "Snail,Dragon Turtle,Fiend,Cannoneer,Snail,Centaur,Brute,Dino,Siege Ram,Safety Mole,Brute",
+          "stayedUntilEnd": true,
+          "chosenSpell": "Pawn Shop",
+          "chosenSpellLocation": "-1|-1",
+          "partySize": 1,
+          "firstWaveFighters": "Yozora",
+          "rolls": "",
+          "legionSpecificElo": 2782,
+          "partyMembers": [
+              "Kingdanzz"
+          ],
+          "partyMembersIds": [
+              "6849F9D14290C34A"
+          ],
+          "mvpScore": 3915,
+          "netWorthPerWave": [
+              432,
+              534,
+              664,
+              812,
+              972,
+              1168,
+              1388,
+              1631,
+              1911,
+              2255,
+              2743,
+              3193,
+              3666,
+              4218,
+              4495
+          ],
+          "valuePerWave": [
+              190,
+              190,
+              280,
+              280,
+              380,
+              495,
+              760,
+              985,
+              910,
+              1170,
+              1575,
+              1900,
+              2220,
+              2695,
+              3255
+          ],
+          "workersPerWave": [
+              3,
+              3,
+              5,
+              7,
+              8,
+              8,
+              8,
+              10,
+              14,
+              14,
+              14,
+              20.199999,
+              20.199999,
+              20.199999,
+              20.199999
+          ],
+          "incomePerWave": [
+              10,
+              16,
+              28,
+              46,
+              52,
+              82,
+              100,
+              118,
+              118,
+              188,
+              227,
+              239,
+              239,
+              364,
+              388
+          ],
+          "mercenariesSentPerWave": [
+              [],
+              [],
+              [
+                  "Snail"
+              ],
+              [
+                  "Dragon Turtle"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [
+                  "Cannoneer"
+              ],
+              [
+                  "Snail"
+              ],
+              [],
+              [],
+              [
+                  "Centaur",
+                  "Brute"
+              ],
+              [
+                  "Dino"
+              ],
+              [],
+              [],
+              [
+                  "Siege Ram",
+                  "Safety Mole",
+                  "Brute"
+              ]
+          ],
+          "mercenariesReceivedPerWave": [
+              [],
+              [],
+              [
+                  "Lizard"
+              ],
+              [
+                  "Snail"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Ogre",
+                  "Dragon Turtle"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [],
+              [
+                  "Imp",
+                  "Imp",
+                  "Imp",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail"
+              ],
+              [],
+              [],
+              [
+                  "Ghost Knight",
+                  "Ghost Knight",
+                  "Ogre",
+                  "Hermit",
+                  "Giant Snail"
+              ]
+          ],
+          "leaksPerWave": [
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Kobra",
+                  "Ogre"
+              ],
+              [],
+              [
+                  "Granddaddy"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Giant Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Hermit"
+              ]
+          ],
+          "buildPerWave": [
+              [
+                  "yozora_unit_id:2.5|4.5:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_nest_unit_id:3.5|3:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_nest_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_nest_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_nest_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0",
+                  "gateguard_unit_id:0.5|4.5:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_nest_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0",
+                  "gateguard_unit_id:0.5|4.5:0",
+                  "wileshroom_unit_id:1.5|3:0",
+                  "goblin_copter_unit_id:8.5|6.5:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0",
+                  "harbinger_unit_id:0.5|4.5:0",
+                  "wileshroom_unit_id:1.5|3:0",
+                  "goblin_copter_unit_id:8.5|6.5:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0",
+                  "harbinger_unit_id:0.5|4.5:0",
+                  "wileshroom_unit_id:1.5|3:0",
+                  "goblin_copter_unit_id:8.5|6.5:0",
+                  "desert_pilgrim_unit_id:0.5|6.5:0",
+                  "sea_serpent_unit_id:0.5|13.5:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_nest_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0",
+                  "harbinger_unit_id:0.5|4.5:0",
+                  "wileshroom_unit_id:1.5|3:0",
+                  "goblin_copter_unit_id:8.5|6.5:0",
+                  "desert_pilgrim_unit_id:0.5|6.5:0",
+                  "sea_serpent_unit_id:0.5|13.5:0"
+              ],
+              [
+                  "yozora_unit_id:2.5|4.5:0",
+                  "pack_rat_unit_id:3.5|3:0",
+                  "tempest_unit_id:1.5|6:0",
+                  "harbinger_unit_id:0.5|4.5:0",
+                  "wileshroom_unit_id:1.5|3:0",
+                  "goblin_copter_unit_id:8.5|6.5:0",
+                  "desert_pilgrim_unit_id:0.5|6.5:0",
+                  "deepcoiler_unit_id:0.5|13.5:0"
+              ],
+              [
+                  "tempest_unit_id:1.5|6:0",
+                  "harbinger_unit_id:0.5|4.5:0",
+                  "goblin_copter_unit_id:8.5|6.5:0",
+                  "desert_pilgrim_unit_id:0.5|6.5:0",
+                  "deepcoiler_unit_id:0.5|13.5:0",
+                  "azeria_unit_id:0.5|10.5:0",
+                  "warg_unit_id:8.5|9:0",
+                  "warg_unit_id:7.5|8.5:0",
+                  "pollywog_unit_id:8.5|8:0",
+                  "angler_unit_id:7.5|7.5:0"
+              ],
+              [
+                  "alpha_male_unit_id:8.5|9:0",
+                  "warg_unit_id:7.5|8.5:0",
+                  "pyro_unit_id:7.5|7.5:0",
+                  "pyro_unit_id:8.5|7:0",
+                  "pyro_unit_id:8.5|6:0",
+                  "pyro_unit_id:7.5|5.5:0",
+                  "aps_unit_id:7.5|6.5:0",
+                  "pyro_unit_id:6.5|7:0",
+                  "pyro_unit_id:6.5|6:0",
+                  "bazooka_unit_id:5.5|5.5:0",
+                  "seedling_unit_id:8.5|8:0"
+              ],
+              [
+                  "alpha_male_unit_id:8.5|9:0",
+                  "warg_unit_id:7.5|8.5:0",
+                  "pyro_unit_id:7.5|7.5:0",
+                  "pyro_unit_id:8.5|7:0",
+                  "pyro_unit_id:7.5|5.5:0",
+                  "mps_unit_id:7.5|6.5:0",
+                  "pyro_unit_id:6.5|7:0",
+                  "pyro_unit_id:6.5|6:0",
+                  "bazooka_unit_id:5.5|5.5:0",
+                  "seedling_unit_id:8.5|8:0",
+                  "millennium_unit_id:8.5|6:0"
+              ],
+              [
+                  "alpha_male_unit_id:8.5|9:0",
+                  "warg_unit_id:7.5|8.5:0",
+                  "pyro_unit_id:7.5|7.5:0",
+                  "pyro_unit_id:8.5|7:0",
+                  "pyro_unit_id:7.5|5.5:0",
+                  "mps_unit_id:7.5|6.5:0",
+                  "pyro_unit_id:6.5|7:0",
+                  "pyro_unit_id:6.5|6:0",
+                  "seedling_unit_id:8.5|8:0",
+                  "doomsday_machine_unit_id:8.5|6:0",
+                  "dark_mage_unit_id:8.5|4:0"
+              ],
+              [
+                  "alpha_male_unit_id:8.5|9:0",
+                  "warg_unit_id:7.5|8.5:0",
+                  "pyro_unit_id:7.5|7.5:0",
+                  "pyro_unit_id:8.5|7:0",
+                  "pyro_unit_id:7.5|5.5:0",
+                  "mps_unit_id:7.5|6.5:0",
+                  "pyro_unit_id:6.5|7:0",
+                  "pyro_unit_id:6.5|6:0",
+                  "doomsday_machine_unit_id:8.5|6:0",
+                  "dark_mage_unit_id:8.5|4:0",
+                  "arctaire_unit_id:6.5|8:0",
+                  "masked_spirit_unit_id:6.5|10:0"
+              ]
+          ],
+          "leakValue": 167,
+          "leaksCaughtValue": 102,
+          "leftAtSeconds": -1,
+          "kingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Spell"
+              ],
+              [],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Attack",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Spell"
+              ]
+          ],
+          "opponentKingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+          ],
+          "megamind": false,
+          "chosenChampionLocation": "-1|-1"
+      },
+      {
+          "playerId": "B2A15AB5E8AFD77B",
+          "playerName": "InDaHole",
+          "playerSlot": 5,
+          "legion": "Cartel",
+          "workers": 27.539087,
+          "value": 2670,
+          "cross": false,
+          "gameResult": "won",
+          "classicElo": 2765,
+          "overallElo": 2976,
+          "eloChange": 0,
+          "fighters": "Bone Warrior,Bone Warrior,Lord Of Death,Shadow Dancer,Bone Warrior,Ocean Templar,Atom,Mudman,Dread Knight,Mudman,Mudman,Mudman,Dark Mage,Atom,Slime Siren",
+          "eco": false,
+          "mercenaries": "Lizard,Snail,Ogre,Dragon Turtle,Fiend,Imp,Imp,Imp,Imp,Imp,Imp,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Ghost Knight,Ghost Knight,Ogre,Hermit,Giant Snail",
+          "stayedUntilEnd": true,
+          "chosenSpell": "Giant Snail",
+          "chosenSpellLocation": "-1|-1",
+          "partySize": 1,
+          "firstWaveFighters": "Slime Siren",
+          "rolls": "bone_warrior_unit_id, proton_unit_id, slime_larva_unit_id, mudman_unit_id, lord_of_death_unit_id, shadow_dancer_unit_id",
+          "legionSpecificElo": 2109,
+          "partyMembers": [
+              "InDaHole"
+          ],
+          "partyMembersIds": [
+              "B2A15AB5E8AFD77B"
+          ],
+          "mvpScore": 3340,
+          "netWorthPerWave": [
+              437,
+              550,
+              691,
+              844,
+              1009,
+              1180,
+              1458,
+              1844,
+              2129,
+              2412,
+              2816,
+              3157,
+              3476,
+              3980,
+              4270
+          ],
+          "valuePerWave": [
+              175,
+              175,
+              265,
+              390,
+              390,
+              545,
+              720,
+              895,
+              1080,
+              1370,
+              1600,
+              1455,
+              1850,
+              2105,
+              2670
+          ],
+          "workersPerWave": [
+              4,
+              5,
+              6,
+              8,
+              9,
+              9,
+              11,
+              15,
+              15,
+              16,
+              19.360003,
+              27.539087,
+              27.539087,
+              27.539087,
+              27.539087
+          ],
+          "incomePerWave": [
+              15,
+              27,
+              39,
+              45,
+              57,
+              57,
+              107,
+              137,
+              155,
+              119,
+              217,
+              242,
+              242,
+              382,
+              438
+          ],
+          "mercenariesSentPerWave": [
+              [],
+              [],
+              [
+                  "Lizard"
+              ],
+              [
+                  "Snail"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Ogre",
+                  "Dragon Turtle"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [],
+              [
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Imp",
+                  "Imp",
+                  "Imp"
+              ],
+              [],
+              [],
+              [
+                  "Ghost Knight",
+                  "Ghost Knight",
+                  "Hermit",
+                  "Ogre",
+                  "Giant Snail"
+              ]
+          ],
+          "mercenariesReceivedPerWave": [
+              [],
+              [],
+              [
+                  "Lizard"
+              ],
+              [
+                  "Lizard"
+              ],
+              [],
+              [],
+              [
+                  "Safety Mole",
+                  "Brute",
+                  "Snail"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [
+                  "Safety Mole",
+                  "Brute",
+                  "Brute"
+              ],
+              [
+                  "Dino"
+              ],
+              [
+                  "Dino"
+              ],
+              [
+                  "Safety Mole",
+                  "Brute"
+              ],
+              [],
+              [
+                  "Witch",
+                  "Dragon Turtle",
+                  "Snail"
+              ]
+          ],
+          "leaksPerWave": [
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Granddaddy",
+                  "Brute"
+              ],
+              [],
+              [
+                  "Mantis",
+                  "Mantis",
+                  "Mantis",
+                  "Mantis",
+                  "Mantis"
+              ],
+              [
+                  "Drill Golem",
+                  "Drill Golem",
+                  "Drill Golem",
+                  "Drill Golem",
+                  "Brute",
+                  "Safety Mole"
+              ],
+              [],
+              [
+                  "Froggo",
+                  "Froggo",
+                  "Giant Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Quadrapus",
+                  "Witch"
+              ]
+          ],
+          "buildPerWave": [
+              [
+                  "slime_siren_unit_id:1.5|3:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0",
+                  "bone_warrior_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0",
+                  "bone_warrior_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:1",
+                  "slime_siren_unit_id:0.5|3.5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0",
+                  "bone_warrior_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:-1",
+                  "slime_siren_unit_id:0.5|3.5:0",
+                  "mudman_unit_id:1.5|5:1",
+                  "bone_warrior_unit_id:1.5|6:0",
+                  "proton_unit_id:1.5|2:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:0",
+                  "slime_siren_unit_id:0.5|3.5:0",
+                  "mudman_unit_id:1.5|5:-1",
+                  "mudman_unit_id:2.5|4.5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:1",
+                  "slime_siren_unit_id:0.5|3.5:0",
+                  "mudman_unit_id:1.5|5:1",
+                  "mudman_unit_id:2.5|4.5:1",
+                  "shadow_dancer_unit_id:0.5|4.5:0",
+                  "proton_unit_id:7.5|5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "bone_crusher_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:8.5|5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:-1",
+                  "slime_siren_unit_id:0.5|3.5:0",
+                  "mudman_unit_id:1.5|5:-1",
+                  "mudman_unit_id:2.5|4.5:-1",
+                  "shadow_dancer_unit_id:0.5|4.5:0",
+                  "proton_unit_id:7.5|5:0",
+                  "mudman_unit_id:2.5|5.5:1",
+                  "atom_unit_id:1.5|2:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:1",
+                  "slime_siren_unit_id:0.5|3.5:0",
+                  "mudman_unit_id:1.5|5:1",
+                  "mudman_unit_id:2.5|4.5:1",
+                  "shadow_dancer_unit_id:0.5|4.5:0",
+                  "mudman_unit_id:2.5|5.5:-1",
+                  "atom_unit_id:1.5|2:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:-1",
+                  "slime_siren_unit_id:0.5|3.5:0",
+                  "mudman_unit_id:1.5|5:-1",
+                  "mudman_unit_id:2.5|4.5:-1",
+                  "shadow_dancer_unit_id:0.5|4.5:0",
+                  "mudman_unit_id:2.5|5.5:0",
+                  "atom_unit_id:1.5|2:0",
+                  "ocean_templar_unit_id:1.5|4:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:1",
+                  "mudman_unit_id:1.5|5:1",
+                  "mudman_unit_id:2.5|4.5:1",
+                  "dread_knight_unit_id:0.5|4.5:0",
+                  "mudman_unit_id:2.5|5.5:1",
+                  "atom_unit_id:1.5|2:0",
+                  "ocean_templar_unit_id:1.5|4:0",
+                  "bone_warrior_unit_id:0.5|1.5:0"
+              ],
+              [
+                  "slime_siren_unit_id:1.5|3:0",
+                  "atom_unit_id:0.5|5.5:0",
+                  "dark_mage_unit_id:0.5|2.5:0",
+                  "mudman_unit_id:8.5|6:-1",
+                  "mudman_unit_id:1.5|5:-1",
+                  "mudman_unit_id:2.5|4.5:-1",
+                  "dread_knight_unit_id:0.5|4.5:0",
+                  "mudman_unit_id:2.5|5.5:-1",
+                  "atom_unit_id:1.5|2:0",
+                  "ocean_templar_unit_id:1.5|4:0",
+                  "bone_warrior_unit_id:0.5|1.5:0",
+                  "shadow_dancer_unit_id:0.5|3.5:0",
+                  "lord_of_death_unit_id:2.5|3.5:0",
+                  "bone_warrior_unit_id:3.5|7:0",
+                  "bone_warrior_unit_id:3.5|6:0"
+              ]
+          ],
+          "leakValue": 289,
+          "leaksCaughtValue": 105,
+          "leftAtSeconds": -1,
+          "kingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+          ],
+          "opponentKingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Regen",
+                  "Upgrade King Regen",
+                  "Upgrade King Regen"
+              ],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Regen"
+              ]
+          ],
+          "megamind": false,
+          "chosenChampionLocation": "-1|-1"
+      },
+      {
+          "playerId": "F7B454981ECF35A5",
+          "playerName": "Aatrocity",
+          "playerSlot": 6,
+          "legion": "Greed",
+          "workers": 24.080002,
+          "value": 3240,
+          "cross": false,
+          "gameResult": "won",
+          "classicElo": 2487,
+          "overallElo": 2701,
+          "eloChange": 0,
+          "fighters": "Hades,Peewee,Veteran,Leviathan,Trinity Archer,Leviathan,Veteran,Veteran,Trinity Archer,Devilfish,Veteran,Veteran,Veteran,Devilfish,Big Wig",
+          "eco": false,
+          "mercenaries": "Snail,Fiend,Pack Leader,Robo,Fiend,Pack Leader,Safety Mole,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Needler,Pack Leader,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail",
+          "stayedUntilEnd": true,
+          "chosenSpell": "Giant Snail",
+          "chosenSpellLocation": "-1|-1",
+          "partySize": 1,
+          "firstWaveFighters": "Pollywog,Dwarf Banker",
+          "rolls": "pollywog_unit_id, peewee_unit_id, tempest_unit_id, dwarf_banker_unit_id, elite_archer_unit_id, great_boar_unit_id",
+          "legionSpecificElo": 1657,
+          "partyMembers": [
+              "Aatrocity"
+          ],
+          "partyMembersIds": [
+              "F7B454981ECF35A5"
+          ],
+          "mvpScore": 4615,
+          "netWorthPerWave": [
+              434,
+              535,
+              662,
+              821,
+              1000,
+              1183,
+              1450,
+              1830,
+              2140,
+              2468,
+              2865,
+              3374,
+              3817,
+              4440,
+              4802
+          ],
+          "valuePerWave": [
+              110,
+              160,
+              275,
+              355,
+              450,
+              650,
+              795,
+              845,
+              1080,
+              1390,
+              1710,
+              1710,
+              2215,
+              2665,
+              3240
+          ],
+          "workersPerWave": [
+              5,
+              5,
+              6,
+              7,
+              7,
+              7,
+              10,
+              14,
+              15,
+              15,
+              18.360003,
+              24.080002,
+              24.080002,
+              24.080002,
+              24.080002
+          ],
+          "incomePerWave": [
+              11,
+              23,
+              29,
+              47,
+              53,
+              53,
+              93,
+              121,
+              139,
+              139,
+              233,
+              257,
+              257,
+              411,
+              435
+          ],
+          "mercenariesSentPerWave": [
+              [],
+              [],
+              [
+                  "Snail"
+              ],
+              [],
+              [
+                  "Fiend"
+              ],
+              [],
+              [],
+              [
+                  "Pack Leader",
+                  "Robo"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [],
+              [
+                  "Pack Leader",
+                  "Safety Mole",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail"
+              ],
+              [],
+              [],
+              [
+                  "Needler",
+                  "Pack Leader",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail",
+                  "Giant Snail"
+              ]
+          ],
+          "mercenariesReceivedPerWave": [
+              [],
+              [],
+              [
+                  "Snail"
+              ],
+              [
+                  "Dragon Turtle"
+              ],
+              [
+                  "Fiend"
+              ],
+              [],
+              [
+                  "Cannoneer"
+              ],
+              [
+                  "Snail"
+              ],
+              [],
+              [],
+              [
+                  "Centaur",
+                  "Brute"
+              ],
+              [
+                  "Dino"
+              ],
+              [],
+              [],
+              [
+                  "Siege Ram",
+                  "Safety Mole",
+                  "Brute"
+              ]
+          ],
+          "leaksPerWave": [
+              [],
+              [
+                  "Wale",
+                  "Wale"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                  "Quill Shooter",
+                  "Quill Shooter",
+                  "Quill Shooter",
+                  "Quill Shooter",
+                  "Quill Shooter",
+                  "Quill Shooter",
+                  "Quill Shooter"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Giant Quadrapus"
+              ]
+          ],
+          "buildPerWave": [
+              [
+                  "dwarf_banker_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6.5:0"
+              ],
+              [
+                  "dwarf_banker_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6.5:0",
+                  "peewee_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0"
+              ],
+              [
+                  "dwarf_banker_unit_id:0.5|7.5:0",
+                  "pollywog_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0"
+              ],
+              [
+                  "dwarf_banker_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0"
+              ],
+              [
+                  "dwarf_banker_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "seraphin_unit_id:2.5|3.5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "elite_archer_unit_id:0.5|6.5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "elite_archer_unit_id:0.5|6.5:0",
+                  "peewee_unit_id:7.5|7.5:0",
+                  "peewee_unit_id:8.5|4.5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "elite_archer_unit_id:0.5|6.5:0",
+                  "peewee_unit_id:7.5|7.5:0",
+                  "peewee_unit_id:8.5|4.5:0",
+                  "tempest_unit_id:0.5|5.5:0",
+                  "elite_archer_unit_id:1.5|5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "trinity_archer_unit_id:0.5|6.5:0",
+                  "peewee_unit_id:7.5|7.5:0",
+                  "peewee_unit_id:8.5|4.5:0",
+                  "tempest_unit_id:0.5|5.5:0",
+                  "elite_archer_unit_id:1.5|5:0",
+                  "pollywog_unit_id:7.5|6.5:0",
+                  "pollywog_unit_id:7.5|4:0",
+                  "pollywog_unit_id:8.5|3.5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "seraphin_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "trinity_archer_unit_id:0.5|6.5:0",
+                  "peewee_unit_id:7.5|7.5:0",
+                  "peewee_unit_id:8.5|4.5:0",
+                  "tempest_unit_id:0.5|5.5:0",
+                  "elite_archer_unit_id:1.5|5:0",
+                  "pollywog_unit_id:7.5|6.5:0",
+                  "pollywog_unit_id:7.5|4:0",
+                  "pollywog_unit_id:8.5|3.5:0",
+                  "leviathan_unit_id:1.5|6:0",
+                  "peewee_unit_id:6.5|6:0",
+                  "pollywog_unit_id:6.5|5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "seraphin_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "trinity_archer_unit_id:0.5|6.5:0",
+                  "peewee_unit_id:7.5|7.5:0",
+                  "peewee_unit_id:8.5|4.5:0",
+                  "tempest_unit_id:0.5|5.5:0",
+                  "elite_archer_unit_id:1.5|5:0",
+                  "pollywog_unit_id:7.5|6.5:0",
+                  "pollywog_unit_id:7.5|4:0",
+                  "pollywog_unit_id:8.5|3.5:0",
+                  "leviathan_unit_id:1.5|6:0",
+                  "peewee_unit_id:6.5|6:0",
+                  "pollywog_unit_id:6.5|5:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "peewee_unit_id:8.5|5.5:0",
+                  "peewee_unit_id:7.5|5:0",
+                  "seraphin_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "trinity_archer_unit_id:0.5|6.5:0",
+                  "peewee_unit_id:7.5|7.5:0",
+                  "peewee_unit_id:8.5|4.5:0",
+                  "leviathan_unit_id:0.5|5.5:0",
+                  "trinity_archer_unit_id:1.5|5:0",
+                  "pollywog_unit_id:7.5|6.5:0",
+                  "pollywog_unit_id:7.5|4:0",
+                  "pollywog_unit_id:8.5|3.5:0",
+                  "leviathan_unit_id:1.5|6:0",
+                  "peewee_unit_id:6.5|6:0",
+                  "pollywog_unit_id:6.5|5:0",
+                  "peewee_unit_id:6.5|4:0",
+                  "peewee_unit_id:7.5|3:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "veteran_unit_id:8.5|5.5:0",
+                  "veteran_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "pollywog_unit_id:8.5|7.5:0",
+                  "trinity_archer_unit_id:0.5|6.5:0",
+                  "veteran_unit_id:7.5|7.5:0",
+                  "veteran_unit_id:8.5|4.5:0",
+                  "leviathan_unit_id:0.5|5.5:0",
+                  "trinity_archer_unit_id:1.5|5:0",
+                  "pollywog_unit_id:7.5|6.5:0",
+                  "pollywog_unit_id:7.5|4:0",
+                  "pollywog_unit_id:8.5|3.5:0",
+                  "leviathan_unit_id:1.5|6:0",
+                  "veteran_unit_id:6.5|6:0",
+                  "pollywog_unit_id:6.5|5:0",
+                  "peewee_unit_id:6.5|4:0",
+                  "peewee_unit_id:7.5|3:0"
+              ],
+              [
+                  "big_wig_unit_id:0.5|7.5:0",
+                  "devilfish_unit_id:8.5|6.5:0",
+                  "veteran_unit_id:2.5|2.5:0",
+                  "veteran_unit_id:8.5|5.5:0",
+                  "veteran_unit_id:7.5|5:0",
+                  "devilfish_unit_id:2.5|3.5:0",
+                  "trinity_archer_unit_id:0.5|6.5:0",
+                  "veteran_unit_id:7.5|7.5:0",
+                  "veteran_unit_id:8.5|4.5:0",
+                  "leviathan_unit_id:0.5|5.5:0",
+                  "trinity_archer_unit_id:1.5|5:0",
+                  "leviathan_unit_id:1.5|6:0",
+                  "veteran_unit_id:6.5|6:0",
+                  "peewee_unit_id:7.5|3:0",
+                  "hades_unit_id:2.5|5.5:0"
+              ]
+          ],
+          "leakValue": 83,
+          "leaksCaughtValue": 207,
+          "leftAtSeconds": -1,
+          "kingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack"
+              ],
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+          ],
+          "opponentKingUpgradesPerWave": [
+              [
+                  "Upgrade King Attack"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Spell"
+              ],
+              [],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Attack",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [],
+              [
+                  "Upgrade King Spell",
+                  "Upgrade King Spell"
+              ],
+              [],
+              [],
+              [
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Attack",
+                  "Upgrade King Spell"
+              ]
+          ],
+          "megamind": false,
+          "chosenChampionLocation": "-1|-1"
+      }
+  ]
+}
