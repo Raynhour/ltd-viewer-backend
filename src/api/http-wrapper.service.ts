@@ -13,7 +13,7 @@ export class HttpWrapperService {
     _headers?: AxiosRequestHeaders
   ): Promise<AxiosResponse<T>> {
     const headers = {
-      'x-api-key': '2FdzF8Y86k6sPEH8LXIZga8SB72zhXM6fH41Jjrf',
+      'x-api-key': process.env.X_API_KEY,
       ..._headers
     };
     // send get parameter includeDetails

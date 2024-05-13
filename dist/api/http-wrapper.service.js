@@ -19,7 +19,7 @@ let HttpWrapperService = class HttpWrapperService {
     }
     get(url, params, _headers) {
         const headers = {
-            'x-api-key': '2FdzF8Y86k6sPEH8LXIZga8SB72zhXM6fH41Jjrf',
+            'x-api-key': process.env.X_API_KEY,
             ..._headers
         };
         const response = (0, rxjs_1.firstValueFrom)(this.httpService.get(url, { headers, params }).pipe((0, rxjs_1.catchError)((error) => {

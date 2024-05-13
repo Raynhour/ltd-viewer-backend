@@ -27,16 +27,23 @@ let GameService = class GameService {
     }
     async gamyById(gameId) {
         const cachedGame = await this.gameRepository.findOneBy({ _id: gameId });
-        console.log(gameId, !!cachedGame);
+        if (cachedGame?.isNotFound)
+            throw new common_1.HttpException('Game not found', 404);
         if (cachedGame)
             return cachedGame;
         try {
             const response = await this.externalGamesService.getGameById(gameId);
-            const res = await this.createGame(response);
-            console.log(res);
+            await this.createGame(response);
             return response;
         }
         catch (error) {
+            if (error.message.includes('404')) {
+                await this.gameRepository.save({
+                    _id: gameId,
+                    isNotFound: true
+                });
+                throw new common_1.HttpException('Game not found', 404);
+            }
             throw new Error(`Failed to fetch and save game data: ${error.message}`);
         }
     }

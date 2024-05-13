@@ -8,52 +8,55 @@ export class GameEntity {
   @Column()
   _id: string;
 
-  @Column()
+  @Column({ default: false })
+  isNotFound: boolean;
+
+  @Column({ default: '1.0' })
   version: string;
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp', default: '12.03.2024' })
   date: Date;
 
-  @Column()
+  @Column({ default: 'ranked' })
   queueType: string;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'int', default: 1 })
   endingWave: number;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'int', default: 1 })
   gameLength: number;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'int', default: 1 })
   gameElo: number;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'int', default: 1 })
   playerCount: number;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'int', default: 1 })
   humanCount: number;
 
-  @Column('text', { array: true })
+  @Column('text', { array: true, default: [] })
   spellChoices: string[];
 
-  @Column('float', { array: true })
+  @Column('float', { array: true, default: [] })
   leftKingPercentHp: number[];
 
-  @Column('float', { array: true })
+  @Column('float', { array: true, default: [] })
   rightKingPercentHp: number[];
 
-  @Column()
+  @Column({ default: 'none' })
   kingSpell: string;
 
   @Column({ default: false })
   incomenchill: boolean;
 
-  @Column({ nullable: true })
+  @Column({ nullable: true, default: null })
   votedmode: string;
 
-  @Column({ nullable: true })
+  @Column({ nullable: true, default: null })
   availablemode: string;
 
-  @Column('simple-json', { nullable: true })
+  @Column('simple-json', { nullable: true, default: null })
   playersData: PlayerData[];
 
   // Define other columns...

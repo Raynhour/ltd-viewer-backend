@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { GameEntity } from './game.entity';
@@ -17,17 +17,21 @@ export class GameService {
 
   async gamyById(gameId: string): Promise<GameEntity> {
     const cachedGame = await this.gameRepository.findOneBy({ _id: gameId });
-    console.log(gameId, !!cachedGame);
+    if (cachedGame?.isNotFound) throw new HttpException('Game not found', 404);
     if (cachedGame) return cachedGame;
     try {
       const response = await this.externalGamesService.getGameById(gameId);
-
-      // Save games to the database
-      const res = await this.createGame(response);
-      console.log(res);
-
+      await this.createGame(response);
       return response;
     } catch (error) {
+      if (error.message.includes('404')) {
+        await this.gameRepository.save({
+          _id: gameId,
+          isNotFound: true
+        });
+
+        throw new HttpException('Game not found', 404);
+      }
       throw new Error(`Failed to fetch and save game data: ${error.message}`);
     }
     // return await this.gameRepository.findOneBy({ id });

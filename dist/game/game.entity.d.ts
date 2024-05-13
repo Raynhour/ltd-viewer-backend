@@ -1,6 +1,7 @@
 export declare class GameEntity {
     id: number;
     _id: string;
+    isNotFound: boolean;
     version: string;
     date: Date;
     queueType: string;

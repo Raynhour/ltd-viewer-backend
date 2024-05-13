@@ -23,51 +23,55 @@ __decorate([
     __metadata("design:type", String)
 ], GameEntity.prototype, "_id", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, typeorm_1.Column)({ default: false }),
+    __metadata("design:type", Boolean)
+], GameEntity.prototype, "isNotFound", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ default: '1.0' }),
     __metadata("design:type", String)
 ], GameEntity.prototype, "version", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'timestamp' }),
+    (0, typeorm_1.Column)({ type: 'timestamp', default: '12.03.2024' }),
     __metadata("design:type", Date)
 ], GameEntity.prototype, "date", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, typeorm_1.Column)({ default: 'ranked' }),
     __metadata("design:type", String)
 ], GameEntity.prototype, "queueType", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'int' }),
+    (0, typeorm_1.Column)({ type: 'int', default: 1 }),
     __metadata("design:type", Number)
 ], GameEntity.prototype, "endingWave", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'int' }),
+    (0, typeorm_1.Column)({ type: 'int', default: 1 }),
     __metadata("design:type", Number)
 ], GameEntity.prototype, "gameLength", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'int' }),
+    (0, typeorm_1.Column)({ type: 'int', default: 1 }),
     __metadata("design:type", Number)
 ], GameEntity.prototype, "gameElo", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'int' }),
+    (0, typeorm_1.Column)({ type: 'int', default: 1 }),
     __metadata("design:type", Number)
 ], GameEntity.prototype, "playerCount", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'int' }),
+    (0, typeorm_1.Column)({ type: 'int', default: 1 }),
     __metadata("design:type", Number)
 ], GameEntity.prototype, "humanCount", void 0);
 __decorate([
-    (0, typeorm_1.Column)('text', { array: true }),
+    (0, typeorm_1.Column)('text', { array: true, default: [] }),
     __metadata("design:type", Array)
 ], GameEntity.prototype, "spellChoices", void 0);
 __decorate([
-    (0, typeorm_1.Column)('float', { array: true }),
+    (0, typeorm_1.Column)('float', { array: true, default: [] }),
     __metadata("design:type", Array)
 ], GameEntity.prototype, "leftKingPercentHp", void 0);
 __decorate([
-    (0, typeorm_1.Column)('float', { array: true }),
+    (0, typeorm_1.Column)('float', { array: true, default: [] }),
     __metadata("design:type", Array)
 ], GameEntity.prototype, "rightKingPercentHp", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, typeorm_1.Column)({ default: 'none' }),
     __metadata("design:type", String)
 ], GameEntity.prototype, "kingSpell", void 0);
 __decorate([
@@ -75,15 +79,15 @@ __decorate([
     __metadata("design:type", Boolean)
 ], GameEntity.prototype, "incomenchill", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ nullable: true }),
+    (0, typeorm_1.Column)({ nullable: true, default: null }),
     __metadata("design:type", String)
 ], GameEntity.prototype, "votedmode", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ nullable: true }),
+    (0, typeorm_1.Column)({ nullable: true, default: null }),
     __metadata("design:type", String)
 ], GameEntity.prototype, "availablemode", void 0);
 __decorate([
-    (0, typeorm_1.Column)('simple-json', { nullable: true }),
+    (0, typeorm_1.Column)('simple-json', { nullable: true, default: null }),
     __metadata("design:type", Array)
 ], GameEntity.prototype, "playersData", void 0);
 exports.GameEntity = GameEntity = __decorate([

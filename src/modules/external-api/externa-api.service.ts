@@ -15,7 +15,7 @@ export class ExternalApiService {
   fetchDataFromExternalApi(): Observable<AxiosResponse<any>> {
     // Add headers to the request
     const headers = {
-      'x-api-key': '2FdzF8Y86k6sPEH8LXIZga8SB72zhXM6fH41Jjrf',
+      'x-api-key': process.env.X_API_KEY
     };
 
     // Make GET request to external API with headers
@@ -25,7 +25,7 @@ export class ExternalApiService {
         catchError((error: AxiosError) => {
           // Handle errors
           return throwError(error);
-        }),
+        })
       );
   }
 
