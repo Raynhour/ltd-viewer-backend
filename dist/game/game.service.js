@@ -69,8 +69,7 @@ let GameService = class GameService {
                 }
                 await transactionalEntityManager.save(game);
             }));
-            const items = await this.gameRepository.find();
-            console.log(items.length, 'items');
+            await this.gameRepository.find();
             return savedGames;
         });
     }

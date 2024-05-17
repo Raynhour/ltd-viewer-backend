@@ -28,7 +28,6 @@ let PlayerService = class PlayerService {
     async playerByName(name) {
         const cacheKey = `player-${name}`;
         let cachedData = await this.cacheManager.get(cacheKey);
-        console.log(cachedData);
         let player = null;
         if (!cachedData) {
             const playerFromDB = await this.playerRepository.findOneBy({
@@ -49,7 +48,6 @@ let PlayerService = class PlayerService {
     async getPlayer(field, value) {
         const cacheKey = `player-${value}`;
         let player = await this.cacheManager.get(cacheKey);
-        console.log(player, 'cachekey');
         if (!player) {
             player = await this.playerRepository.findOneBy({ [field]: value });
             if (!player) {
@@ -57,7 +55,6 @@ let PlayerService = class PlayerService {
                     field === 'playerName'
                         ? await this.externalPlayerService.getPlayerByName(value)
                         : await this.externalPlayerService.getPlayerById(value);
-                console.log('fetch');
                 await this.createUser(player);
             }
             await this.cacheManager.set(cacheKey, player, 60000);
@@ -67,7 +64,6 @@ let PlayerService = class PlayerService {
     async createUser(playerDTO) {
         const player = this.playerRepository.create(playerDTO);
         player.id = player._id;
-        console.log(player);
         return this.playerRepository.save(player);
     }
     async playerMatches(id, pagination) {
