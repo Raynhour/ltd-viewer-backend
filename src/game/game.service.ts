@@ -5,6 +5,7 @@ import { GameEntity } from './game.entity';
 import { HttpWrapperService } from 'src/api/http-wrapper.service';
 import { ExternalGamesService } from './externalGames.service';
 import { createGameSessionDto } from './dto/createGameSession.dto';
+import { CreateGameDto } from './dto/createGame.dto';
 
 @Injectable()
 export class GameService {
@@ -17,7 +18,7 @@ export class GameService {
 
   async gamyById(gameId: string): Promise<GameEntity> {
     const cachedGame = await this.gameRepository.findOneBy({ _id: gameId });
-    if (cachedGame?.isNotFound) throw new HttpException('Game not found', 404);
+    // if (cachedGame?.isNotFound) throw new HttpException('Game not found', 404);
     if (cachedGame) return cachedGame;
     try {
       const response = await this.externalGamesService.getGameById(gameId);
@@ -25,10 +26,10 @@ export class GameService {
       return response;
     } catch (error) {
       if (error.message.includes('404')) {
-        await this.gameRepository.save({
-          _id: gameId,
-          isNotFound: true
-        });
+        // await this.gameRepository.save({
+        //   _id: gameId,
+        //   isNotFound: true
+        // });
 
         throw new HttpException('Game not found', 404);
       }
@@ -55,5 +56,33 @@ export class GameService {
     const game = new GameEntity();
     Object.assign(game, createGameDTO);
     return await this.gameRepository.save(game);
+  }
+
+  async addMultipleGames(games: createGameSessionDto[]) {
+    return await this.gameRepository.manager.transaction(
+      async (transactionalEntityManager) => {
+        const savedGames = await Promise.all(
+          games
+            .filter((gameDTO) => !!gameDTO._id)
+            .map(async (gameDTO) => {
+              const gameInDB = await this.gameRepository.findOneBy({
+                _id: gameDTO._id
+              });
+              if (gameInDB) return;
+              const game = new GameEntity();
+              Object.assign(game, gameDTO);
+              try {
+                await transactionalEntityManager.save(game);
+              } catch (error) {
+                console.log('Failed to save game', error.message);
+              }
+              await transactionalEntityManager.save(game);
+            })
+        );
+        await this.gameRepository.find();
+
+        return savedGames;
+      }
+    );
   }
 }

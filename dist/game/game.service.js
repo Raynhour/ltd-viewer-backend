@@ -27,8 +27,6 @@ let GameService = class GameService {
     }
     async gamyById(gameId) {
         const cachedGame = await this.gameRepository.findOneBy({ _id: gameId });
-        if (cachedGame?.isNotFound)
-            throw new common_1.HttpException('Game not found', 404);
         if (cachedGame)
             return cachedGame;
         try {
@@ -38,10 +36,6 @@ let GameService = class GameService {
         }
         catch (error) {
             if (error.message.includes('404')) {
-                await this.gameRepository.save({
-                    _id: gameId,
-                    isNotFound: true
-                });
                 throw new common_1.HttpException('Game not found', 404);
             }
             throw new Error(`Failed to fetch and save game data: ${error.message}`);
@@ -54,6 +48,31 @@ let GameService = class GameService {
         const game = new game_entity_1.GameEntity();
         Object.assign(game, createGameDTO);
         return await this.gameRepository.save(game);
+    }
+    async addMultipleGames(games) {
+        return await this.gameRepository.manager.transaction(async (transactionalEntityManager) => {
+            const savedGames = await Promise.all(games
+                .filter((gameDTO) => !!gameDTO._id)
+                .map(async (gameDTO) => {
+                const gameInDB = await this.gameRepository.findOneBy({
+                    _id: gameDTO._id
+                });
+                if (gameInDB)
+                    return;
+                const game = new game_entity_1.GameEntity();
+                Object.assign(game, gameDTO);
+                try {
+                    await transactionalEntityManager.save(game);
+                }
+                catch (error) {
+                    console.log('Failed to save game', error.message);
+                }
+                await transactionalEntityManager.save(game);
+            }));
+            const items = await this.gameRepository.find();
+            console.log(items.length, 'items');
+            return savedGames;
+        });
     }
 };
 exports.GameService = GameService;

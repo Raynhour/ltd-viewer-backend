@@ -13,13 +13,15 @@ import { ExternalApiService } from './modules/external-api/externa-api.service';
 // import { GameRepository } from './game/game.repository'; // Import the repository
 import ormconfig from './db/ormconfig';
 import { GameModule } from './game/game.module';
+import { PlayerModule } from './player/player.module';
 
 @Module({
   imports: [
     HttpModule,
     GameModule,
     TypeOrmModule.forRoot(ormconfig),
-    ConfigModule.forRoot({ isGlobal: true })
+    ConfigModule.forRoot({ isGlobal: true }),
+    PlayerModule
   ],
   controllers: [AppController, GreetingController, ExternalApiController],
   providers: [AppService, ExternalApiService]

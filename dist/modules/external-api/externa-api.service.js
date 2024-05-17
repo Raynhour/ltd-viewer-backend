@@ -20,7 +20,7 @@ let ExternalApiService = class ExternalApiService {
     }
     fetchDataFromExternalApi() {
         const headers = {
-            'x-api-key': '2FdzF8Y86k6sPEH8LXIZga8SB72zhXM6fH41Jjrf',
+            'x-api-key': process.env.X_API_KEY
         };
         return this.httpService
             .get('https://apiv2.legiontd2.com/players/byName/raynhour', { headers })

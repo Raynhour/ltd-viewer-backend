@@ -18,6 +18,7 @@ const externalApi_controller_1 = require("./modules/external-api/externalApi.con
 const externa_api_service_1 = require("./modules/external-api/externa-api.service");
 const ormconfig_1 = require("./db/ormconfig");
 const game_module_1 = require("./game/game.module");
+const player_module_1 = require("./player/player.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -27,7 +28,8 @@ exports.AppModule = AppModule = __decorate([
             axios_1.HttpModule,
             game_module_1.GameModule,
             typeorm_1.TypeOrmModule.forRoot(ormconfig_1.default),
-            config_1.ConfigModule.forRoot({ isGlobal: true })
+            config_1.ConfigModule.forRoot({ isGlobal: true }),
+            player_module_1.PlayerModule
         ],
         controllers: [app_controller_1.AppController, greeting_controller_1.GreetingController, externalApi_controller_1.ExternalApiController],
         providers: [app_service_1.AppService, externa_api_service_1.ExternalApiService]

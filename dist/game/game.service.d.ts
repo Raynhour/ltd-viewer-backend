@@ -11,4 +11,5 @@ export declare class GameService {
     gamyById(gameId: string): Promise<GameEntity>;
     fetchAndSaveGameData(): Promise<GameEntity[]>;
     createGame(createGameDTO: createGameSessionDto): Promise<GameEntity>;
+    addMultipleGames(games: createGameSessionDto[]): Promise<void[]>;
 }

@@ -1,5 +1,6 @@
 export declare class createGameSessionDto {
     id: number;
+    _id: string;
     kingSpell: string;
     incomenchill: boolean;
     votedmode?: string;
