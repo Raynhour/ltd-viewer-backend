@@ -18,20 +18,19 @@ export class PlayerService {
   ) {}
 
   async playerByName(name: string): Promise<PlayerEntity> {
-    const cacheKey = `player-${name}`;
+    const cacheKey = `player-${name.toLocaleLowerCase()}`;
     let cachedData = await this.cacheManager.get<PlayerEntity>(cacheKey);
     let player: PlayerEntity = null;
     if (!cachedData) {
-      const playerFromDB = await this.playerRepository.findOneBy({
-        playerName: name
-      });
+      const playerFromDB = await this.playerRepository
+        .createQueryBuilder('player')
+        .where('LOWER(player.playerName) = LOWER(:name)', { name })
+        .getOne();
       if (playerFromDB) return playerFromDB;
-
       player = await this.externalPlayerService.getPlayerByName(name);
       await this.createUser(player);
-      await this.cacheManager.set(cacheKey, cachedData, 60000);
-
       cachedData = player;
+      await this.cacheManager.set(cacheKey, cachedData, 60000 * 15);
     }
     return cachedData;
   }
@@ -53,7 +52,7 @@ export class PlayerService {
         await this.createUser(player);
       }
 
-      await this.cacheManager.set(cacheKey, player, 60000);
+      await this.cacheManager.set(cacheKey, player, 60000 * 15);
     }
 
     return player;

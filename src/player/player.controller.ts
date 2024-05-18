@@ -39,6 +39,7 @@ export class PlayerController {
       await this.gameService.addMultipleGames(matches);
       return matches;
     } catch (error) {
+      console.log(error);
       throw new NotFoundException('Player not found');
     }
   }

@@ -37,6 +37,7 @@ let PlayerController = class PlayerController {
             return matches;
         }
         catch (error) {
+            console.log(error);
             throw new common_1.NotFoundException('Player not found');
         }
     }

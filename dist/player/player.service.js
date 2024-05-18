@@ -26,19 +26,20 @@ let PlayerService = class PlayerService {
         this.externalPlayerService = externalPlayerService;
     }
     async playerByName(name) {
-        const cacheKey = `player-${name}`;
+        const cacheKey = `player-${name.toLocaleLowerCase()}`;
         let cachedData = await this.cacheManager.get(cacheKey);
         let player = null;
         if (!cachedData) {
-            const playerFromDB = await this.playerRepository.findOneBy({
-                playerName: name
-            });
+            const playerFromDB = await this.playerRepository
+                .createQueryBuilder('player')
+                .where('LOWER(player.playerName) = LOWER(:name)', { name })
+                .getOne();
             if (playerFromDB)
                 return playerFromDB;
             player = await this.externalPlayerService.getPlayerByName(name);
             await this.createUser(player);
-            await this.cacheManager.set(cacheKey, cachedData, 60000);
             cachedData = player;
+            await this.cacheManager.set(cacheKey, cachedData, 60000 * 15);
         }
         return cachedData;
     }
@@ -57,7 +58,7 @@ let PlayerService = class PlayerService {
                         : await this.externalPlayerService.getPlayerById(value);
                 await this.createUser(player);
             }
-            await this.cacheManager.set(cacheKey, player, 60000);
+            await this.cacheManager.set(cacheKey, player, 60000 * 15);
         }
         return player;
     }
