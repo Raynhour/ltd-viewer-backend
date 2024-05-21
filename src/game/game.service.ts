@@ -68,6 +68,7 @@ export class GameService {
               .filter((gameDTO) => !!gameDTO._id)
               .map(async (gameDTO) => {
                 try {
+                  console.log('before find');
                   const gameInDB = await this.gameRepository.findOneBy({
                     _id: gameDTO._id
                   });
