@@ -26,7 +26,9 @@ let PlayerService = class PlayerService {
         this.externalPlayerService = externalPlayerService;
     }
     async playerByName(name) {
+        console.log('insde playerByName', name);
         const cacheKey = `player-${name.toLocaleLowerCase()}`;
+        console.log('cached', cacheKey);
         let cachedData = await this.cacheManager.get(cacheKey);
         let player = null;
         if (!cachedData) {
@@ -36,7 +38,9 @@ let PlayerService = class PlayerService {
                 .getOne();
             if (playerFromDB)
                 return playerFromDB;
+            console.log('before fetch player');
             player = await this.externalPlayerService.getPlayerByName(name);
+            console.log('after fetch player', player);
             await this.createUser(player);
             cachedData = player;
             await this.cacheManager.set(cacheKey, cachedData, 60000 * 15);

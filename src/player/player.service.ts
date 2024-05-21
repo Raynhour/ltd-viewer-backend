@@ -18,7 +18,9 @@ export class PlayerService {
   ) {}
 
   async playerByName(name: string): Promise<PlayerEntity> {
+    console.log('insde playerByName', name);
     const cacheKey = `player-${name.toLocaleLowerCase()}`;
+    console.log('cached', cacheKey);
     let cachedData = await this.cacheManager.get<PlayerEntity>(cacheKey);
     let player: PlayerEntity = null;
     if (!cachedData) {
@@ -27,7 +29,9 @@ export class PlayerService {
         .where('LOWER(player.playerName) = LOWER(:name)', { name })
         .getOne();
       if (playerFromDB) return playerFromDB;
+      console.log('before fetch player');
       player = await this.externalPlayerService.getPlayerByName(name);
+      console.log('after fetch player', player);
       await this.createUser(player);
       cachedData = player;
       await this.cacheManager.set(cacheKey, cachedData, 60000 * 15);
