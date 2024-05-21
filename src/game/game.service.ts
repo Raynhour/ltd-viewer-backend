@@ -72,7 +72,7 @@ export class GameService {
                   const gameInDB = await this.gameRepository.findOneBy({
                     _id: gameDTO._id
                   });
-                  console.log('after', gameInDB)
+                  console.log('after', gameInDB._id)
                   if (gameInDB) return;
                 } catch (error) {
                   console.log('error', error);
