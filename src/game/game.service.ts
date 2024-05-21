@@ -68,10 +68,11 @@ export class GameService {
               .filter((gameDTO) => !!gameDTO._id)
               .map(async (gameDTO) => {
                 try {
-                  console.log('before find');
+                  console.log('before find', gameDTO._id);
                   const gameInDB = await this.gameRepository.findOneBy({
                     _id: gameDTO._id
                   });
+                  console.log('after', gameInDB)
                   if (gameInDB) return;
                 } catch (error) {
                   console.log('error', error);
