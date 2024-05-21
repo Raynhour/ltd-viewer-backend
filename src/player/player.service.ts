@@ -73,8 +73,9 @@ export class PlayerService {
 
   async playerMatches(id: string, pagination: IPagination) {
     try {
-      const matches = this.externalPlayerService.playerMatches(id, pagination);
-
+      console.log('enter matches')
+      const matches = await this.externalPlayerService.playerMatches(id, pagination);
+      console.log('matches inside', matches);
       return matches;
     } catch (error) {
       throw new HttpException('Failed to fetch player matches', 400);

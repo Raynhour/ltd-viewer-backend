@@ -38,7 +38,9 @@ export class PlayerController {
         player._id,
         pagination
       );
+      console.log(matches, 'matches')
       await this.gameService.addMultipleGames(matches);
+      console.log('add multiple games')
       return matches;
     } catch (error) {
       console.log(error);
