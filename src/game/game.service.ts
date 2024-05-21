@@ -59,30 +59,37 @@ export class GameService {
   }
 
   async addMultipleGames(games: createGameSessionDto[]) {
-    return await this.gameRepository.manager.transaction(
-      async (transactionalEntityManager) => {
-        const savedGames = await Promise.all(
-          games
-            .filter((gameDTO) => !!gameDTO._id)
-            .map(async (gameDTO) => {
-              const gameInDB = await this.gameRepository.findOneBy({
-                _id: gameDTO._id
-              });
-              if (gameInDB) return;
-              const game = new GameEntity();
-              Object.assign(game, gameDTO);
-              try {
+    try {
+      return await this.gameRepository.manager.transaction(
+        async (transactionalEntityManager) => {
+          console.log('insde transcations')
+          const savedGames = await Promise.all(
+            games
+              .filter((gameDTO) => !!gameDTO._id)
+              .map(async (gameDTO) => {
+                const gameInDB = await this.gameRepository.findOneBy({
+                  _id: gameDTO._id
+                });
+                if (gameInDB) return;
+                const game = new GameEntity();
+                Object.assign(game, gameDTO);
+                console.log('before save')
+                try {
+                  
+                  await transactionalEntityManager.save(game);
+                } catch (error) {
+                  console.log('Failed to save game', error.message);
+                }
                 await transactionalEntityManager.save(game);
-              } catch (error) {
-                console.log('Failed to save game', error.message);
-              }
-              await transactionalEntityManager.save(game);
-            })
-        );
-        await this.gameRepository.find();
-
-        return savedGames;
-      }
-    );
+              })
+          );
+          await this.gameRepository.find();
+          return savedGames;
+        }
+      );
+    } catch (error) {
+      console.log('failed to save', error)
+      return [];
+    }
   }
 }
