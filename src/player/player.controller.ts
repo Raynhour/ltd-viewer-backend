@@ -31,7 +31,9 @@ export class PlayerController {
     @Query() pagination: IPagination
   ) {
     try {
+      console.log('name', name);
       const player = await this.playerService.playerByName(name);
+      console.log(player, 'player')
       const matches = await this.playerService.playerMatches(
         player._id,
         pagination

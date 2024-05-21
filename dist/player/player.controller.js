@@ -31,7 +31,9 @@ let PlayerController = class PlayerController {
     }
     async playerMatchesByName(name, pagination) {
         try {
+            console.log('name', name);
             const player = await this.playerService.playerByName(name);
+            console.log(player, 'player');
             const matches = await this.playerService.playerMatches(player._id, pagination);
             await this.gameService.addMultipleGames(matches);
             return matches;

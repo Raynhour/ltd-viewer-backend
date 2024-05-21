@@ -33,9 +33,12 @@ export class PlayerService {
       player = await this.externalPlayerService.getPlayerByName(name);
       console.log('after fetch player', player);
       await this.createUser(player);
+      console.log('after create user');
       cachedData = player;
       await this.cacheManager.set(cacheKey, cachedData, 60000 * 15);
+      console.log('after cache')
     }
+    console.log('end', cachedData);
     return cachedData;
   }
 
