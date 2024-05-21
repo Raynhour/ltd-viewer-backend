@@ -39,7 +39,7 @@ export class PlayerController {
         pagination
       );
       console.log(matches, 'matches')
-      await this.gameService.addMultipleGames(matches);
+      // await this.gameService.addMultipleGames(matches);
       console.log('add multiple games')
       return matches;
     } catch (error) {

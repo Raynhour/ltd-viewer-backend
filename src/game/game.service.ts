@@ -88,7 +88,7 @@ export class GameService {
                 await transactionalEntityManager.save(game);
               })
           );
-          await this.gameRepository.find();
+          // await this.gameRepository.find();
           return savedGames;
         }
       );
