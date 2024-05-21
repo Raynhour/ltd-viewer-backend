@@ -56,18 +56,6 @@ let GameService = class GameService {
                 const savedGames = await Promise.all(games
                     .filter((gameDTO) => !!gameDTO._id)
                     .map(async (gameDTO) => {
-                    try {
-                        console.log('before find', gameDTO._id);
-                        const gameInDB = await this.gameRepository.findOneBy({
-                            _id: gameDTO._id
-                        });
-                        console.log('after', gameInDB._id);
-                        if (gameInDB)
-                            return;
-                    }
-                    catch (error) {
-                        console.log('error', error);
-                    }
                     const game = new game_entity_1.GameEntity();
                     Object.assign(game, gameDTO);
                     console.log('before save');
