@@ -35,7 +35,9 @@ let PlayerController = class PlayerController {
             const player = await this.playerService.playerByName(name);
             console.log(player, 'player');
             const matches = await this.playerService.playerMatches(player._id, pagination);
+            console.log(matches, 'matches');
             await this.gameService.addMultipleGames(matches);
+            console.log('add multiple games');
             return matches;
         }
         catch (error) {

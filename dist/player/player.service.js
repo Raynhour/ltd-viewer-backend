@@ -76,7 +76,9 @@ let PlayerService = class PlayerService {
     }
     async playerMatches(id, pagination) {
         try {
-            const matches = this.externalPlayerService.playerMatches(id, pagination);
+            console.log('enter matches');
+            const matches = await this.externalPlayerService.playerMatches(id, pagination);
+            console.log('matches inside', matches);
             return matches;
         }
         catch (error) {
